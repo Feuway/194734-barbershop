@@ -8,7 +8,7 @@
   <body>
 		<header class="main-header">
 			<div class="container">
-				<a href="index.html"></a>
+				<a class="logo" href="index.html"><img src="#" alt="barbershop"></a>
 				<nav class="main-navigation">
 					<ul>
 						<li><a href="#">Информация</a></li>
@@ -33,41 +33,39 @@
 				</div>
 			</div>
 			<div class="catalog">
-				<section class="filter">
-					<form action="" method="post">
-						<div class="flter-brand">
-							<h2>Производители:</h2>
-							<input type="checkbox" name="boc" id="boc" checked>
-							<label for="boc">Baxter of california</label>
-							<input type="checkbox" name="mr-natty" id="mr-natty">
-							<label for="mr-natty">Mr Natty</label>
-							<input type="checkbox" name="suavecito" id="suavecito" checked>
-							<label for="suavecito">Suavecito</label>
-							<input type="checkbox" name="m+g" id="m+g">
-							<label for="m+g">Malin+Goetz</label>
-							<input type="checkbox" name="murrays" id="murrays">
-							<label for="murrays">Murray's</label>
-							<input type="checkbox" name="american-crew" id="american-crew" checked>
-							<label for="american-crew">American Crew</label>
-						</div>
-						<div class="filter-product-group">
-							<h2>Группы товаров:</h2>
-							<input type="radio" name="razors" id="razors">
-							<label for="razors">Бритвенные принадлежности</label>
-							<input type="radio" name="care" id="care" checked>
-							<label for="care">Средства для ухода</label>
-							<input type="radio" name="accessories" id="accessories">
-							<label for="accessories">Аксессуары</label>
-						</div>
-						<div class="show">
-							<input type="submit" name="show" value="Показать">
-						</div>
-					</form>
-				</section>
+				<form class="filter" action="" method="post">
+					<fieldset class="flter-brand">
+						<legend>Производители:</legend>
+						<input type="checkbox" name="boc" id="boc" checked>
+						<label for="boc">Baxter of california</label>
+						<input type="checkbox" name="mr-natty" id="mr-natty">
+						<label for="mr-natty">Mr Natty</label>
+						<input type="checkbox" name="suavecito" id="suavecito" checked>
+						<label for="suavecito">Suavecito</label>
+						<input type="checkbox" name="m+g" id="m+g">
+						<label for="m+g">Malin+Goetz</label>
+						<input type="checkbox" name="murrays" id="murrays">
+						<label for="murrays">Murray's</label>
+						<input type="checkbox" name="american-crew" id="american-crew" checked>
+						<label for="american-crew">American Crew</label>
+					</fieldset>
+					<fieldset class="filter-product-group">
+						<legend>Группы товаров:</legend>
+						<input type="radio" name="product-group" id="razors">
+						<label for="razors">Бритвенные принадлежности</label>
+						<input type="radio" name="product-group" id="care" checked>
+						<label for="care">Средства для ухода</label>
+						<input type="radio" name="product-group" id="accessories">
+						<label for="accessories">Аксессуары</label>
+					</fieldset>
+					<div class="show">
+						<input type="submit" name="show" value="Показать">
+					</div>
+				</form>
 				<section class="catalog">
 					<article class="catalog-item">
-						<div class="image">
-							<a href="#"><img src="http://placehold.it/150x100" alt=""></a>
+						<a class="image" href="#"><img src="http://placehold.it/150x100" alt=""></a>
+						<div class="info-item">
 							<div class="item-name">
 								<a href="">
 									<span class="normal-text">Набор для путешествий</span><br>
@@ -81,8 +79,8 @@
 						</div>
 					</article>
 					<article class="catalog-item">
-						<div class="image">
-							<a href="#"><img src="http://placehold.it/150x100" alt=""></a>
+						<a class="image" href="#"><img src="http://placehold.it/150x100" alt=""></a>
+						<div class="info-item">
 							<div class="item-name">
 								<a href="">
 									<span class="normal-text">Увлажняющий кондиционер</span><br>
@@ -96,8 +94,8 @@
 						</div>
 					</article>
 					<article class="catalog-item">
-						<div class="image">
-							<a href="#"><img src="http://placehold.it/150x100" alt=""></a>
+						<a class="image" href="#"><img src="http://placehold.it/150x100" alt=""></a>
+						<div class="info-item">
 							<div class="item-name">
 								<a href="#">
 									<span class="normal-text">Гель для волос</span><br>
@@ -111,8 +109,8 @@
 						</div>
 					</article>
 					<article class="catalog-item">
-						<div class="image">
-							<a href="#"><img src="http://placehold.it/150x100" alt=""></a>
+						<a class="image" href="#"><img src="http://placehold.it/150x100" alt=""></a>
+						<div class="info-item">
 							<div class="item-name">
 								<a href="#">
 									<span class="normal-text">Глина для укладки волос</span><br>
@@ -126,8 +124,8 @@
 						</div>
 					</article>
 					<article class="catalog-item">
-						<div class="image">
-							<a href="#"><img src="http://placehold.it/150x100" alt=""></a>
+						<a class="image" href="#"><img src="http://placehold.it/150x100" alt=""></a>
+						<div class="info-item">
 							<div class="item-name">
 								<a href="#">
 									<span class="normal-text">Гель для волос</span><br>
@@ -141,8 +139,8 @@
 						</div>
 					</article>
 					<article class="catalog-item">
-						<div class="image">
-							<a href="#"><img src="http://placehold.it/150x100" alt=""></a>
+						<a class="image" href="#"><img src="http://placehold.it/150x100" alt=""></a>
+						<div class="info-item">
 							<div class="item-name">
 								<a href="#">
 									<span class="normal-text">Набор для бритья</span><br>
