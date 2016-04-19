@@ -1,0 +1,17 @@
+body {
+	font-size: 14px;
+	font-family: "PTSans";
+	line-height: 24px;
+	color: #000;
+	font-weight: bold;
+}
+
+}
+.index-content-title {
+	font-size: 30px;
+	line-height: 42px;
+}
+.title-text {
+	font-size: 24px;
+	line-height: 30px;
+}
