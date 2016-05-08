@@ -3,19 +3,33 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>HTML Academy: Барбершоп</title>
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-<body>
-	<header class="main-header">
+	<body class="inner-page">
+		<header class="main-header">
 			<div class="container clearfix">
-				<a class="logo" href="index.html"><img src="img/logo.png" alt="barbershop"></a>
 				<nav class="main-navigation">
+					<a class="logo" href="index.html">
+						<img class="logo-img" src="img/logo.png" width="111" height="24" alt="barbershop">
+					</a>
 					<ul>
-						<li><a href="#">Информация</a></li>
-						<li><a href="#">Новости</a></li>
-						<li><a href="price.html" class="nav-active">Прайс-лист</a></li>
-						<li><a href="catalog.html">Магазин</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li>
+							<a href="#">Информация</a>
+							</li>
+						<li>
+							<a href="#">Новости</a>
+						</li>
+						<li class="active">
+							<a>Прайс-лист</a>
+						</li>
+						<li>
+							<a href="catalog.html">Магазин</a>
+							</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
 					</ul>
 				</nav>
 				<div class="user-block">
@@ -27,49 +41,61 @@
 			<div class="title">
 				<h2 class="index-content-title">Прайс-лист</h2>
 				<div class="breadcrumbs">
-					<a href="">Главная</a>
+					<a href="index.html">Главная</a>
 					<span class="active">Прайс-лист</span></div>
 			</div>
 			<div class="big-title">
 				<h1>Истинно мужская классика</h1>
 			</div>
 			<section class="content clearfix">
-				<div class="content-price-column">
-						<h2 class="title-text">Мы используем только лучшие средства:</h2>
-						<ul class="funds">
+				<div class="content-column clearfix">
+					<div class="content-column-left">
+						<h2>
+							Мы используем только 
+							<br>лучшие средства:
+						</h2>
+						<ul class="list">
 							<li>Baxter of California</li>
 							<li>Mr Natty</li>
 							<li>Suavecito</li>
 							<li>Malin+Goetz</li>
 						</ul>
+					</div>
+					<div class="content-column-right">
+						<h2>
+							Цены на услуги 
+							<br>наших мастеров:
+						</h2>
+						<table class="prices-services">
+							<tbody>
+								<tr>
+									<th>Стрижка</th>
+									<td>1500 р.</td>
+								</tr>
+								<tr>
+									<th>Стрижка бороды</th>
+									<td>500 р.</td>
+								</tr>
+								<tr>
+									<th>Накрутка усов</th>
+									<td>350 р.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
-				<div class="content-price-column">
-					<h2 class="title-text">Цены на услуги наших мастеров:</h2>
-					<table class="prices-services">
-						<tbody>
-							<tr>
-								<th>Стрижка</th>
-								<td>1500 руб.</td>
-							</tr>
-							<tr>
-								<th>Стрижка бороды</th>
-								<td>500 руб.</td>
-							</tr>
-							<tr>
-								<th>Накрутка усов</th>
-								<td>350 руб.</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				<div class="about-us clearfix">
-					<h2 class="title-text">Несколько слов о нас:</h2>
-					<p class="column-about-us">
-						Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
-					</p>
-					<p class="column-about-us">
-						Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
-					</p>
+				<div class="content-column clearfix">
+					<h2>Несколько слов о нас:</h2>
+					<div class="content-column-left">
+						<p class="about-us">
+							Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
+						</p>
+					</div>
+					<div class="content-column-right">
+						<p class="about-us">
+							Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
+						</p>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -77,9 +103,9 @@
 			<div class="container clearfix">
 				<section class="footer-contacts">
 					Барбершоп «Бородинский»<br>
-					Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+					Адрес: г. Санкт-Петербург, Б. ул. Конюшенная, д. 19/8<br>
 					<a href="#">Как нас найти?</a><br>
-					Телефон: +7 (812) 666-02-66
+					Телефон: +7 (495) 666-02-66
 				</section>
 				<section class="footer-social">
 					<p>Давайте дружить!</p>
@@ -89,9 +115,10 @@
 				</section>
 				<section class="footer-copyright">
 					<p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="btn" href="https://htmlacademy.ru">HTMLAcademy.ru</a>
 				</section>
 			</div>
 		</footer>
-</body>
+	</body>
 </html>
+
